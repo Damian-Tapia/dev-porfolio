@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="badge">
+    <span class="icon">✨</span>
+    Available for new projects
+  </div>
+
+  <h1 class="title">
+    Fullstack Web
+    <br />
+    <span class="title-accent">Developer</span>
+  </h1>
+
+  <p class="subtitle">
+    Building scalable applications with elegant UI.
+    <br />
+    Specialized in <span class="tech">React</span>,
+    <span class="tech">Angular</span>, and
+    <span class="tech">Next.js</span>.
+  </p>
+
+  <div class="buttons">
+    <button class="btn-primary">
+      View My Work
+      <span class="arrow">→</span>
+    </button>
+    <button class="btn-secondary">
+      <span class="code-icon">&lt;/&gt;</span>
+      View GitHub
+    </button>
+  </div>
+
+  <div class="projects">
+    <div *ngFor="let project of projects" class="project-card">
+      <div class="project-icon">
+        <span>&lt;/&gt;</span>
+      </div>
+      <h3 class="project-title">{{ project.title }}</h3>
+      <p class="project-tech">{{ project.tech }}</p>
+    </div>
+  </div>
+</section>

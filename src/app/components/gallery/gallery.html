@@ -1,0 +1,33 @@
+<section class="gallery">
+  <div class="gallery-header">
+    <h2 class="gallery-title">
+      UI/UX <span class="title-accent">Gallery</span>
+    </h2>
+    <p class="gallery-description">
+      Component libraries, design systems, and interface patterns crafted for
+      exceptional user experiences.
+    </p>
+  </div>
+
+  <div class="gallery-grid">
+    <article *ngFor="let item of galleryItems" class="gallery-card">
+      <div class="card-content">
+        <div class="card-badge">✨</div>
+        
+        <div class="card-icon">
+          <span class="icon-wrapper">{{ item.icon }}</span>
+        </div>
+
+        <div class="card-info">
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-category">{{ item.category }}</p>
+        </div>
+      </div>
+
+      <div class="card-overlay">
+        <span class="view-icon">👁️</span>
+        <span class="view-text">View Project</span>
+      </div>
+    </article>
+  </div>
+</section>

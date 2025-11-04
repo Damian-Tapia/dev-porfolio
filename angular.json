@@ -36,6 +36,12 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
+            },
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              ]
             }
           },
           "configurations": {

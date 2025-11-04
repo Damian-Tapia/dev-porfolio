@@ -1,0 +1,257 @@
+@import '../../../styles/variables.scss';
+
+.projects {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.projects-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: $pl-text;
+}
+
+.title-accent {
+  background: $pl-gradient-brand;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-description {
+  font-size: 1.125rem;
+  color: $pl-text-muted;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  &.reverse {
+    .project-image {
+      order: 2;
+    }
+    .project-content {
+      order: 1;
+    }
+  }
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: $pl-gradient-brand;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+.project-number {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.15);
+  line-height: 1;
+}
+
+.project-placeholder {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $pl-text;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.project-icon {
+  font-size: 1.5rem;
+  color: $pl-primary;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .project-icon {
+  transform: translate(4px, -4px);
+}
+
+.project-role {
+  font-size: 1rem;
+  color: $pl-text-muted;
+  margin: 0;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: $pl-danger-500;
+
+  &.solution {
+    color: $pl-primary;
+  }
+
+  &.result {
+    color: $pl-primary;
+  }
+}
+
+.detail-text {
+  font-size: 0.9375rem;
+  color: $pl-text-muted;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tech-stack-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $pl-text-muted;
+}
+
+.tech-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 0.375rem 0.875rem;
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  color: $pl-text;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $pl-primary;
+    background-color: $pl-surface-700;
+  }
+}
+
+@media (max-width: 968px) {
+  .projects {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects-header {
+    margin-bottom: 3rem;
+  }
+
+  .projects-list {
+    gap: 4rem;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    &.reverse {
+      .project-image,
+      .project-content {
+        order: initial;
+      }
+    }
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-number {
+    font-size: 4rem;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-number {
+    font-size: 3rem;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .tech-stack-tags {
+    gap: 0.375rem;
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+  }
+}

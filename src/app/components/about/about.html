@@ -1,0 +1,86 @@
+<section class="about">
+  <div class="about-header">
+    <h2 class="about-title">
+      About <span class="title-accent">Me</span>
+    </h2>
+    <p class="about-description">
+      Fullstack developer specializing in building modern web applications with
+      focus on user experience and scalable architecture.
+    </p>
+  </div>
+
+  <div class="about-content">
+    <!-- Left Column -->
+    <div class="about-left">
+      <h3 class="section-title">Fullstack Web Developer</h3>
+      
+      <p class="section-text">
+        I specialize in creating high-performance web applications with
+        a focus on clean code, intuitive UI/UX, and scalable
+        architecture. With expertise in both frontend and backend
+        technologies, I build end-to-end solutions that solve real-world
+        problems.
+      </p>
+
+      <p class="section-text">
+        My experience spans across sports platforms, e-commerce
+        applications, admin systems, and data-rich dashboards. I'm
+        passionate about modern web technologies and continuously
+        exploring new ways to improve development workflows and
+        user experiences.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="about-right">
+      <h3 class="section-title skills-title">Skills & Technologies</h3>
+      
+      <!-- Frontend Skills -->
+      <div class="skills-group">
+        <h4 class="skills-category">Frontend</h4>
+        <div class="skills-tags">
+          <span *ngFor="let skill of frontendSkills" class="skill-tag">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="skills-group">
+        <h4 class="skills-category">Backend</h4>
+        <div class="skills-tags">
+          <span *ngFor="let skill of backendSkills" class="skill-tag">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div *ngFor="let stat of stats" class="stat-item">
+          <div class="stat-value">{{ stat.value }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech Stack Flow -->
+  <div class="tech-stack">
+    <div class="tech-stack-header">
+      <span class="tech-stack-icon">📚</span>
+      <h3 class="tech-stack-title">Tech Stack Flow</h3>
+    </div>
+
+    <div class="tech-stack-flow">
+      <div *ngFor="let tech of techStack; let last = last" class="tech-item">
+        <div class="tech-icon">{{ tech.icon }}</div>
+        <div class="tech-info">
+          <div class="tech-title">{{ tech.title }}</div>
+          <div class="tech-subtitle">{{ tech.subtitle }}</div>
+        </div>
+        <div *ngIf="!last" class="tech-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>

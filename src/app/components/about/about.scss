@@ -1,0 +1,250 @@
+@import '../../../styles/_variables.scss';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: $pl-text;
+}
+
+.title-accent {
+  background: $pl-gradient-brand;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  color: $pl-text-muted;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.about-left,
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $pl-text;
+  margin-bottom: 0.5rem;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: $pl-text-muted;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.skills-title {
+  color: $pl-primary;
+  margin-bottom: 1.5rem;
+}
+
+.skills-group {
+  margin-bottom: 1.5rem;
+}
+
+.skills-category {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $pl-primary;
+  margin-bottom: 0.75rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: $pl-text;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $pl-primary;
+    background-color: $pl-surface-700;
+  }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: $pl-gradient-brand;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: $pl-text-muted;
+}
+
+.tech-stack {
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.tech-stack-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stack-icon {
+  font-size: 1.5rem;
+  color: $pl-primary;
+}
+
+.tech-stack-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $pl-text;
+  margin: 0;
+}
+
+.tech-stack-flow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  position: relative;
+}
+
+.tech-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: $pl-surface-700;
+  border: 1px solid $pl-border;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $pl-primary;
+    background-color: $pl-surface-900;
+  }
+}
+
+.tech-info {
+  text-align: center;
+}
+
+.tech-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $pl-text;
+  margin-bottom: 0.25rem;
+}
+
+.tech-subtitle {
+  font-size: 0.875rem;
+  color: $pl-text-muted;
+}
+
+.tech-arrow {
+  position: absolute;
+  right: -2rem;
+  top: 1.5rem;
+  font-size: 1.5rem;
+  color: $pl-primary;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .about-header {
+    margin-bottom: 3rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tech-stack {
+    padding: 1.5rem;
+  }
+
+  .tech-stack-flow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tech-arrow {
+    display: none;
+  }
+}

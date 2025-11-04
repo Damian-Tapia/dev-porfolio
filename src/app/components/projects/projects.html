@@ -1,0 +1,61 @@
+<section class="projects">
+  <div class="projects-header">
+    <h2 class="projects-title">
+      Featured <span class="title-accent">Projects</span>
+    </h2>
+    <p class="projects-description">
+      Real-world solutions with measurable impact. Each project tells a story of
+      problem-solving and innovation.
+    </p>
+  </div>
+
+  <div class="projects-list">
+    <article *ngFor="let project of projects" 
+             class="project-card"
+             [class.reverse]="project.imagePosition === 'right'">
+      
+      <!-- Project Image -->
+      <div class="project-image">
+        <div class="project-number">{{ '0' + project.id }}</div>
+        <div class="project-placeholder">Project Screenshot</div>
+      </div>
+
+      <!-- Project Content -->
+      <div class="project-content">
+        <div class="project-header">
+          <h3 class="project-title">
+            {{ project.title }}
+            <span class="project-icon">↗</span>
+          </h3>
+          <p class="project-role">{{ project.role }}</p>
+        </div>
+
+        <div class="project-details">
+          <div class="detail-item">
+            <h4 class="detail-label">Problem</h4>
+            <p class="detail-text">{{ project.problem }}</p>
+          </div>
+
+          <div class="detail-item">
+            <h4 class="detail-label solution">Solution</h4>
+            <p class="detail-text">{{ project.solution }}</p>
+          </div>
+
+          <div class="detail-item">
+            <h4 class="detail-label result">Result</h4>
+            <p class="detail-text">{{ project.result }}</p>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="tech-stack-label">Tech Stack</div>
+          <div class="tech-stack-tags">
+            <span *ngFor="let tech of project.techStack" class="tech-tag">
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
