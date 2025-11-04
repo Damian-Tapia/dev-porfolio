@@ -1,0 +1,105 @@
+@import '../../../styles/variables';
+
+.language-selector {
+  position: relative;
+  z-index: 100;
+}
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 0.5rem;
+  color: $pl-text;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+
+  &:hover {
+    background-color: $pl-surface-700;
+    border-color: $pl-primary;
+  }
+}
+
+.lang-flag {
+  font-size: 1.125rem;
+}
+
+.lang-code {
+  letter-spacing: 0.05em;
+}
+
+.arrow {
+  font-size: 0.625rem;
+  transition: transform 0.2s ease;
+  
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 160px;
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  color: $pl-text;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: inherit;
+
+  &:hover {
+    background-color: $pl-surface-700;
+  }
+
+  &.active {
+    background-color: rgba(16, 183, 127, 0.1);
+    color: $pl-primary;
+  }
+}
+
+.item-flag {
+  font-size: 1.125rem;
+}
+
+.item-name {
+  flex: 1;
+}
+
+.checkmark {
+  color: $pl-primary;
+  font-weight: 700;
+}

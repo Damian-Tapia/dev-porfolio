@@ -1,11 +1,13 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   imports: [
     NgIf,
-    NgFor
+    NgFor,
+    TranslateModule
   ],
   templateUrl: './about.html',
   styleUrl: './about.scss',

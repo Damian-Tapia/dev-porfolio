@@ -1,5 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface GalleryItem {
   id: number;
@@ -10,7 +11,8 @@ interface GalleryItem {
 @Component({
   selector: 'app-gallery',
   imports: [
-    NgFor
+    NgFor,
+    TranslateModule
   ],
   templateUrl: './gallery.html',
   styleUrl: './gallery.scss',

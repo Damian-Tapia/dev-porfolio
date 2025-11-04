@@ -4,18 +4,17 @@
       <!-- Left Section -->
       <div class="footer-left">
         <h3 class="footer-title">
-          Let's <span class="title-accent">Build</span> Together
+          {{ 'footer.title' | translate }} <span class="title-accent">{{ 'footer.titleAccent' | translate }}</span> {{ 'footer.titleEnd' | translate }}
         </h3>
         <p class="footer-description">
-          Available for freelance projects, consulting, and full-time
-          opportunities. Let's create something amazing.
+          {{ 'footer.description' | translate }}
         </p>
       </div>
 
       <!-- Right Section -->
       <div class="footer-right">
         <div class="contact-section">
-          <h4 class="section-title">Get In Touch</h4>
+          <h4 class="section-title">{{ 'footer.getInTouch' | translate }}</h4>
           <a [href]="'mailto:' + email" class="email-link">
             <span class="email-icon">✉️</span>
             {{ email }}
@@ -23,7 +22,7 @@
         </div>
 
         <div class="social-section">
-          <h4 class="section-title">Connect</h4>
+          <h4 class="section-title">{{ 'footer.connect' | translate }}</h4>
           <div class="social-links">
             <a *ngFor="let social of socialLinks"
                [href]="social.url"
@@ -42,14 +41,14 @@
 
     <div class="footer-bottom">
       <p class="copyright">
-        © {{ currentYear }} Fullstack Developer. All rights reserved.
+        © {{ currentYear }} {{ 'footer.copyright' | translate }}
       </p>
 
       <div class="footer-links">
         <a *ngFor="let link of footerLinks" 
            [href]="link.url" 
            class="footer-link">
-          {{ link.label }}
+          {{ link.label | translate }}
         </a>
       </div>
     </div>

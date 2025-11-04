@@ -1,11 +1,15 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageSelector } from "../language-selector/language-selector";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   imports: [
-    NgFor
-  ],
+    NgFor,
+    LanguageSelector,
+    TranslateModule
+],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })

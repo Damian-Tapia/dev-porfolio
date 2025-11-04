@@ -1,5 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Project {
   id: number;
@@ -14,7 +15,8 @@ interface Project {
 @Component({
   selector: 'app-projects',
   imports: [
-    NgFor
+    NgFor,
+    TranslateModule
   ],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',

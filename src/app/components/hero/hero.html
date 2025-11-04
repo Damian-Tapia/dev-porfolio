@@ -1,31 +1,35 @@
 <section class="hero">
+  <div class="language-selector-container">
+    <app-language-selector></app-language-selector>
+  </div>
+
   <div class="badge">
     <span class="icon">✨</span>
-    Available for new projects
+    {{ 'hero.badge' | translate }}
   </div>
 
   <h1 class="title">
-    Fullstack Web
+    {{ 'hero.title' | translate }}
     <br />
-    <span class="title-accent">Developer</span>
+    <span class="title-accent">{{ 'hero.titleAccent' | translate }}</span>
   </h1>
 
   <p class="subtitle">
-    Building scalable applications with elegant UI.
+    {{ 'hero.subtitle' | translate }}
     <br />
-    Specialized in <span class="tech">React</span>,
-    <span class="tech">Angular</span>, and
+    {{ 'hero.specialized' | translate }} <span class="tech">React</span>,
+    <span class="tech">Angular</span>, {{ 'hero.and' | translate }}
     <span class="tech">Next.js</span>.
   </p>
 
   <div class="buttons">
     <button class="btn-primary">
-      View My Work
+      {{ 'hero.viewWork' | translate }}
       <span class="arrow">→</span>
     </button>
     <button class="btn-secondary">
       <span class="code-icon">&lt;/&gt;</span>
-      View GitHub
+      {{ 'hero.viewGithub' | translate }}
     </button>
   </div>
 
