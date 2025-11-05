@@ -1,11 +1,10 @@
 <section class="projects">
   <div class="projects-header">
     <h2 class="projects-title">
-      Featured <span class="title-accent">Projects</span>
+      {{ 'projects.title' | translate }} <span class="title-accent">{{ 'projects.titleAccent' | translate }}</span>
     </h2>
     <p class="projects-description">
-      Real-world solutions with measurable impact. Each project tells a story of
-      problem-solving and innovation.
+      {{ 'projects.description' | translate }}
     </p>
   </div>
 
@@ -32,23 +31,23 @@
 
         <div class="project-details">
           <div class="detail-item">
-            <h4 class="detail-label">Problem</h4>
+            <h4 class="detail-label">{{ 'projects.problem' | translate }}</h4>
             <p class="detail-text">{{ project.problem }}</p>
           </div>
 
           <div class="detail-item">
-            <h4 class="detail-label solution">Solution</h4>
+            <h4 class="detail-label solution">{{ 'projects.solution' | translate }}</h4>
             <p class="detail-text">{{ project.solution }}</p>
           </div>
 
           <div class="detail-item">
-            <h4 class="detail-label result">Result</h4>
+            <h4 class="detail-label result">{{ 'projects.result' | translate }}</h4>
             <p class="detail-text">{{ project.result }}</p>
           </div>
         </div>
 
         <div class="project-footer">
-          <div class="tech-stack-label">Tech Stack</div>
+          <div class="tech-stack-label">{{ 'projects.techStack' | translate }}</div>
           <div class="tech-stack-tags">
             <span *ngFor="let tech of project.techStack" class="tech-tag">
               {{ tech }}

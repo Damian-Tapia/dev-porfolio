@@ -1,18 +1,17 @@
 <section class="about">
   <div class="about-header">
     <h2 class="about-title">
-      About <span class="title-accent">Me</span>
+      {{ 'about.title' | translate }} <span class="title-accent">{{ 'about.titleAccent' | translate }}</span>
     </h2>
     <p class="about-description">
-      Fullstack developer specializing in building modern web applications with
-      focus on user experience and scalable architecture.
+      {{ 'about.description' | translate }}
     </p>
   </div>
 
   <div class="about-content">
     <!-- Left Column -->
     <div class="about-left">
-      <h3 class="section-title">Fullstack Web Developer</h3>
+      <h3 class="section-title">{{ 'about.sectionTitle' | translate }}</h3>
       
       <p class="section-text">
         I specialize in creating high-performance web applications with
@@ -33,11 +32,11 @@
 
     <!-- Right Column -->
     <div class="about-right">
-      <h3 class="section-title skills-title">Skills & Technologies</h3>
+      <h3 class="section-title skills-title">{{ 'about.skillsTitle' | translate }}</h3>
       
       <!-- Frontend Skills -->
       <div class="skills-group">
-        <h4 class="skills-category">Frontend</h4>
+        <h4 class="skills-category">{{ 'about.frontend' | translate }}</h4>
         <div class="skills-tags">
           <span *ngFor="let skill of frontendSkills" class="skill-tag">
             {{ skill }}
@@ -47,7 +46,7 @@
 
       <!-- Backend Skills -->
       <div class="skills-group">
-        <h4 class="skills-category">Backend</h4>
+        <h4 class="skills-category">{{ 'about.backend' | translate }}</h4>
         <div class="skills-tags">
           <span *ngFor="let skill of backendSkills" class="skill-tag">
             {{ skill }}
@@ -59,7 +58,7 @@
       <div class="stats">
         <div *ngFor="let stat of stats" class="stat-item">
           <div class="stat-value">{{ stat.value }}</div>
-          <div class="stat-label">{{ stat.label }}</div>
+          <div class="stat-label">{{ stat.label | translate }}</div>
         </div>
       </div>
     </div>
@@ -69,7 +68,7 @@
   <div class="tech-stack">
     <div class="tech-stack-header">
       <span class="tech-stack-icon">📚</span>
-      <h3 class="tech-stack-title">Tech Stack Flow</h3>
+      <h3 class="tech-stack-title">{{ 'about.techStackTitle' | translate }}</h3>
     </div>
 
     <div class="tech-stack-flow">

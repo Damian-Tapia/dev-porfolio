@@ -1,4 +1,6 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface SocialLink {
   name: string;
@@ -7,7 +9,10 @@ interface SocialLink {
 }
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [
+    NgFor,
+    TranslateModule
+  ],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
