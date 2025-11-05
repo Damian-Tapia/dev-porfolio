@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "badge": "Available for new projects",
+    "title": "Fullstack Web",
+    "titleAccent": "Developer",
+    "subtitle": "Building scalable applications with elegant UI.",
+    "specialized": "Specialized in",
+    "and": "and",
+    "viewWork": "View My Work",
+    "viewGithub": "View GitHub"
+  },
+  "about": {
+    "title": "About",
+    "titleAccent": "Me",
+    "description": "Fullstack developer specializing in building modern web applications with focus on user experience and scalable architecture.",
+    "sectionTitle": "Fullstack Web Developer",
+    "experienceLabel": "Years Experience",
+    "projectsLabel": "Projects",
+    "satisfactionLabel": "Satisfaction",
+    "skillsTitle": "Skills & Technologies",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "techStackTitle": "Tech Stack Flow"
+  },
+  "projects": {
+    "title": "Featured",
+    "titleAccent": "Projects",
+    "description": "Real-world solutions with measurable impact. Each project tells a story of problem-solving and innovation.",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "techStack": "Tech Stack"
+  },
+  "gallery": {
+    "title": "UI/UX",
+    "titleAccent": "Gallery",
+    "description": "Component libraries, design systems, and interface patterns crafted for exceptional user experiences.",
+    "viewProject": "View Project"
+  },
+  "footer": {
+    "title": "Let's",
+    "titleAccent": "Build",
+    "titleEnd": "Together",
+    "description": "Available for freelance projects, consulting, and full-time opportunities. Let's create something amazing.",
+    "getInTouch": "Get In Touch",
+    "connect": "Connect",
+    "copyright": "Fullstack Developer. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "editWith": "Edit with"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "it": "Italiano"
+  }
+}

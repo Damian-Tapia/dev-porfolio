@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "badge": "Disponibile per nuovi progetti",
+    "title": "Sviluppatore Web",
+    "titleAccent": "Fullstack",
+    "subtitle": "Costruendo applicazioni scalabili con UI elegante.",
+    "specialized": "Specializzato in",
+    "and": "e",
+    "viewWork": "Vedi il Mio Lavoro",
+    "viewGithub": "Vedi GitHub"
+  },
+  "about": {
+    "title": "Su di",
+    "titleAccent": "Me",
+    "description": "Sviluppatore fullstack specializzato nella creazione di applicazioni web moderne con focus su esperienza utente e architettura scalabile.",
+    "sectionTitle": "Sviluppatore Web Fullstack",
+    "experienceLabel": "Anni di Esperienza",
+    "projectsLabel": "Progetti",
+    "satisfactionLabel": "Soddisfazione",
+    "skillsTitle": "Competenze e Tecnologie",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "techStackTitle": "Flusso dello Stack Tecnologico"
+  },
+  "projects": {
+    "title": "Progetti",
+    "titleAccent": "In Evidenza",
+    "description": "Soluzioni del mondo reale con impatto misurabile. Ogni progetto racconta una storia di risoluzione dei problemi e innovazione.",
+    "problem": "Problema",
+    "solution": "Soluzione",
+    "result": "Risultato",
+    "techStack": "Stack Tecnologico"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "titleAccent": "UI/UX",
+    "description": "Librerie di componenti, sistemi di design e pattern di interfaccia creati per esperienze utente eccezionali.",
+    "viewProject": "Vedi Progetto"
+  },
+  "footer": {
+    "title": "Costruiamo",
+    "titleAccent": "Qualcosa",
+    "titleEnd": "Insieme",
+    "description": "Disponibile per progetti freelance, consulenza e opportunità full-time. Creiamo qualcosa di straordinario.",
+    "getInTouch": "Contattami",
+    "connect": "Connetti",
+    "copyright": "Sviluppatore Fullstack. Tutti i diritti riservati.",
+    "privacy": "Politica sulla Privacy",
+    "terms": "Termini di Servizio",
+    "editWith": "Modificato con"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "it": "Italiano"
+  }
+}
