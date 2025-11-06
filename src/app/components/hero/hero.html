@@ -23,11 +23,11 @@
   </p>
 
   <div class="buttons">
-    <button class="btn-primary">
+    <button class="btn-primary" (click)="scrollToProjects()">
       {{ 'hero.viewWork' | translate }}
       <span class="arrow">→</span>
     </button>
-    <button class="btn-secondary">
+    <button class="btn-secondary" (click)="goToGithub()">
       <span class="code-icon">&lt;/&gt;</span>
       {{ 'hero.viewGithub' | translate }}
     </button>

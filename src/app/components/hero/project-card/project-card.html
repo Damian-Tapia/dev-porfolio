@@ -1,0 +1,13 @@
+<div class="project-card" (click)="onCardClick()" [class.clickable]="project.link">
+  <div class="project-image" [class.has-image]="hasImage">
+    <img *ngIf="hasImage" [src]="imageUrl" [alt]="project.title" class="card-img" />
+    <div *ngIf="!hasImage" class="project-icon">
+      <span>&lt;/&gt;</span>
+    </div>
+  </div>
+  
+  <div class="project-info">
+    <h3 class="project-title">{{ project.title }}</h3>
+    <p class="project-tech">{{ project.tech }}</p>
+  </div>
+</div>
