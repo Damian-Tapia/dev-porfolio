@@ -1,0 +1,72 @@
+@import '../../../styles/variables';
+
+.project-card {
+  background-color: $pl-surface-800;
+  border: 1px solid $pl-border;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &.clickable {
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $pl-surface-700;
+    border-color: $pl-primary;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(16, 183, 127, 0.15);
+  }
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  background-color: $pl-surface-900;
+
+  &.has-image {
+    background: transparent;
+  }
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  .project-card:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.project-icon {
+  width: 100%;
+  height: 100%;
+  background: $pl-gradient-brand;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: $pl-white;
+  opacity: 0.9;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: $pl-text;
+}
+
+.project-tech {
+  font-size: 0.875rem;
+  color: $pl-text-muted;
+  margin: 0;
+}
